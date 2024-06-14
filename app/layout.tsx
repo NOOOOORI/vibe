@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-
+import { jaJP } from "@clerk/localizations";
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -39,6 +39,7 @@ export default function RootLayout({
             colorInputText: "#fff",
           },
         }}
+        localization={jaJP}
       >
         <body className={`${inter.className} bg-dark-2`}>
           {children}
