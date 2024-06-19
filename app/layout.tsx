@@ -11,8 +11,9 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ZOOM",
-  description: "Zoom",
+  title: "Vibe",
+  description:
+    "Vibeは、シンプルで使いやすいビデオ会議アプリです。高度な機能を備えながら、セキュリティとユーザビリティにも優れています。チームコラボレーション、オンラインミーティング、遠隔授業など、様々なシーンでご利用いただけます。",
   icons: {
     icon: "/icons/logo.svg",
   },
