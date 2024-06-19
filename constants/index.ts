@@ -1,26 +1,26 @@
 export const sidebarLinks = [
   {
-    label: "Home",
+    label: "ホーム",
     route: "/",
     imgUrl: "/icons/Home.svg",
   },
   {
-    label: "Upcoming",
+    label: "スケジュール",
     route: "/upcoming",
     imgUrl: "/icons/upcoming.svg",
   },
   {
-    label: "Previous",
+    label: "履歴",
     route: "/previous",
     imgUrl: "/icons/previous.svg",
   },
   {
-    label: "Recordings",
+    label: "録画",
     route: "/recordings",
     imgUrl: "/icons/Video.svg",
   },
   {
-    label: "Personal Room",
+    label: "ユーザー",
     route: "/personal-room",
     imgUrl: "/icons/add-personal.svg",
   },

@@ -31,7 +31,7 @@ const MeetingTypeList = () => {
 
     try {
       if (!values.dateTime) {
-        toast({ title: "Please select a date and time" });
+        toast({ title: "日時を選択してください" });
         return;
       }
       const id = crypto.randomUUID();
@@ -110,7 +110,7 @@ const MeetingTypeList = () => {
         >
           <div className="flex flex-col gap-2.5">
             <label className="text-base text-normal leading-[22px] text-sky-2">
-              Add a description
+              ミーティングの詳細
             </label>
             <Textarea
               className="border-none bg-dark-2 focus-visible:ring-0 focus-visible:ring-offset-0"
@@ -121,7 +121,7 @@ const MeetingTypeList = () => {
           </div>
           <div className="flex w-full flex-col gap-2.5">
             <label className="text-base text-normal leading-[22px] text-sky-2">
-              Select Date and Time
+              日付と時間を選択
             </label>
             <ReactDatePicker
               selected={values.dateTime}

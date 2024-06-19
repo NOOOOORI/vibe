@@ -25,7 +25,7 @@ const EndCallButton = () => {
       }}
       className="bg-red-500"
     >
-      End call for everyone
+      ミーティング終了
     </Button>
   );
 };

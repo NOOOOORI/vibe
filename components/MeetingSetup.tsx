@@ -42,7 +42,7 @@ const MeetingSetup = ({
             checked={isMicCamToggleOn}
             onChange={(e) => setIsMicCamToggleOn(e.target.checked)}
           />
-          Join with mic and camera off
+          マイクとカメラをオフにして参加
         </label>
         <DeviceSettings />
       </div>
@@ -54,7 +54,7 @@ const MeetingSetup = ({
           setIsSetupComplete(true);
         }}
       >
-        Join meeting
+        ーティングに参加する
       </Button>
     </div>
   );
