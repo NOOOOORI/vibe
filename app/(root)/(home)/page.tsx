@@ -3,13 +3,16 @@ import MeetingTypeList from "@/components/MeetingTypeList";
 const Home = () => {
   const now = new Date();
 
+  const options = { timeZone: "Asia/Tokyo" };
   const time = now.toLocaleTimeString("ja-JP", {
     hour: "2-digit",
     minute: "2-digit",
     hour12: false,
+    ...options,
   });
   const date = new Intl.DateTimeFormat("ja-JP", {
     dateStyle: "full",
+    timeZone: "Asia/Tokyo",
   }).format(now);
   return (
     <section className="flex size-full flex-col gap-10 text-white">
