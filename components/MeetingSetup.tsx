@@ -54,7 +54,7 @@ const MeetingSetup = ({
           setIsSetupComplete(true);
         }}
       >
-        ーティングに参加する
+        ミーティングに参加する
       </Button>
     </div>
   );
