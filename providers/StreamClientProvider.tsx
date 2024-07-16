@@ -13,27 +13,15 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
   const { user, isLoaded } = useUser();
 
   useEffect(() => {
-    if (!isLoaded) {
-      return <Loader />;
-    }
-    
-    if (!user) {
-      return (
-        <div>
-          <h2>You are not logged in</h2>
-          <p>Please log in to use this feature.</p>
-          <button onClick={() => loginUser()}>Log in</button>
-        </div>
-      );
-    }
+    if (!isLoaded || !user) return;
     if (!apiKey) throw new Error("Stream API key missing");
 
     const client = new StreamVideoClient({
       apiKey,
       user: {
-        id: user.id,
-        name: user.username || user.id,
-        image: user.imageUrl,
+        id: user?.id,
+        name: user?.username || user?.id,
+        image: user?.imageUrl,
       },
       tokenProvider,
     });
